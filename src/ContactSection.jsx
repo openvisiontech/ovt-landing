@@ -8,7 +8,19 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormState('loading');
-    // Logic to send data to your endpoint (e.g., EmailJS or a backend)
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    const subject = encodeURIComponent("OVT Contact Form Submission from " + data.fullName);
+    let bodyText = `Name: ${data.fullName}\nEmail: ${data.email}\nEntity Type: ${data.entityType}\n`;
+    if (requestSdk && data.github) {
+      bodyText += `GitHub: ${data.github}\n`;
+    }
+    bodyText += `\nMessage:\n${data.message}`;
+
+    window.location.href = `mailto:genshianglin@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
+
     setTimeout(() => setFormState('success'), 1500);
   };
 
@@ -40,11 +52,11 @@ const ContactSection = () => {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-2 gap-4">
-                <input required className="bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" placeholder="Full Name" />
-                <input required type="email" className="bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" placeholder="Org Email" />
+                <input name="fullName" required className="bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" placeholder="Full Name" />
+                <input name="email" required type="email" className="bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" placeholder="Org Email" />
               </div>
 
-              <select className="w-full bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition">
+              <select name="entityType" className="w-full bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition">
                 <option>Federal / Defense Entity</option>
                 <option>Commercial Partner</option>
                 <option>Research Institution</option>
@@ -69,12 +81,12 @@ const ContactSection = () => {
 
               {requestSdk && (
                 <div className="animate-in fade-in slide-in-from-top-2 duration-300">
-                  <input required className="w-full bg-slate-950 border border-blue-500/30 p-3 rounded-lg text-white outline-none" placeholder="GitHub Username / Organization Handle" />
+                  <input name="github" required className="w-full bg-slate-950 border border-blue-500/30 p-3 rounded-lg text-white outline-none" placeholder="GitHub Username / Organization Handle" />
                   <p className="text-[10px] text-slate-500 mt-2 ml-1">Access is granted via GitHub invitation following verification.</p>
                 </div>
               )}
 
-              <textarea required className="w-full bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" rows="3" placeholder="Primary use case or mission requirements..."></textarea>
+              <textarea name="message" required className="w-full bg-slate-950 border border-white/10 p-3 rounded-lg text-white outline-none focus:border-blue-500 transition" rows="3" placeholder="Primary use case or mission requirements..."></textarea>
 
               <button className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition cursor-pointer flex items-center justify-center gap-2">
                 {requestSdk ? 'Submit Access Application' : 'Send Message'}
