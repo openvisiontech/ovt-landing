@@ -54,20 +54,20 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6"
         >
-          <Zap size={14} /> NOW MCP-COMPLIANT
+          <Zap size={14} /> AGENT SKILLS & MCP
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           className="text-6xl md:text-7xl font-extrabold text-white mb-6 tracking-tight"
         >
-          Turn Robotic Assets <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">into AI Agents</span>
+          Make Robotic Assets <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Agentic AI Ready</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
           className="text-xl text-slate-400 max-w-2xl mx-auto mb-10"
         >
-          ulisdk is the connective tissue for the agentic era.
-          Expose your robotic assets as discoverable MCP services for LLMs.
+          Bridge the gap between physical hardware and Language Models.
+          Seamlessly export the capabilities and telemetry of the robotic assets to the Agentic AI ecosystem.
         </motion.p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
@@ -80,8 +80,7 @@ const Hero = () => {
           </a>
           <button
             onClick={() => setShowPdf(true)}
-            className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition cursor-pointer"
-          >
+            className="px-8 py-4 bg-slate-800 text-white rounded-xl font-bold border border-white/10 hover:bg-slate-700 transition cursor-pointer">
             <FileText size={18} /> View Technical Whitepaper
           </button>
         </div>
@@ -127,8 +126,8 @@ const Features = () => (
     <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-12">
       {[
         { title: "Agentic Interoperability", desc: "Full A2UI support via Dart-FFI. Enable AI Agents to drive Flutter-based interfaces and reason through hardware tasks in real-time.", icon: <Bot className="text-blue-400" /> },
-        { title: "MCP-Compliant", desc: "Native Model Context Protocol support. Ready for Claude, GPT, and custom Agents.", icon: <Cpu className="text-cyan-400" /> },
-        { title: "Dynamic Discovery", desc: "Assets self-describe capabilities. No more hard-coded APIs or manual glue code.", icon: <Search className="text-purple-400" /> }
+        { title: "Agent Skills and MCP", desc: "Agent Skills and MCP support. Ready for Claude, GPT, and custom Agents.", icon: <Cpu className="text-cyan-400" /> },
+        { title: "Dynamic Infrastructure", desc: "Assets self-describe capabilities. No more hard-coded APIs or manual glue code.", icon: <Search className="text-purple-400" /> }
       ].map((f, i) => (
         <div key={i} className="p-8 rounded-2xl bg-slate-900/50 border border-white/5 hover:border-blue-500/30 transition">
           <div className="mb-4">{f.icon}</div>
