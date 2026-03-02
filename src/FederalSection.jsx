@@ -1,21 +1,29 @@
 import React from 'react';
-import { Shield, Target, Share2, Award, FileText, X } from 'lucide-react';
+import { Shield, Target, Share2, Award, FileText, X, Download } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import { motion } from 'framer-motion';
 
 const FederalSection = () => {
-  const [showPdf, setShowPdf] = React.useState(false);
+  const [showCapabilityStatement, setShowCapabilityStatement] = React.useState(false);
+  const [capabilityContent, setCapabilityContent] = React.useState('');
 
   // Prevent scrolling when modal is open
   React.useEffect(() => {
-    if (showPdf) {
+    if (showCapabilityStatement) {
       document.body.style.overflow = 'hidden';
+      if (!capabilityContent) {
+        fetch('/Capability_Statement.md')
+          .then(res => res.text())
+          .then(text => setCapabilityContent(text))
+          .catch(err => console.error("Failed to load capability statement", err));
+      }
     } else {
       document.body.style.overflow = 'auto';
     }
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, [showPdf]);
+  }, [showCapabilityStatement, capabilityContent]);
 
   return (
     <section id="federal" className="py-24 bg-slate-950 border-t border-white/5 relative overflow-hidden">
@@ -76,7 +84,7 @@ const FederalSection = () => {
                     <p className="text-sm text-slate-300">541511, 541715, 334511</p>
                   </div>
                   <button
-                    onClick={() => setShowPdf(true)}
+                    onClick={() => setShowCapabilityStatement(true)}
                     className="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-bold rounded-lg transition uppercase tracking-tighter flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FileText size={16} /> View Capability Statement
@@ -89,33 +97,40 @@ const FederalSection = () => {
         </div>
       </div>
 
-      {showPdf && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 md:p-8" onClick={() => setShowPdf(false)}>
+      {showCapabilityStatement && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 md:p-8" onClick={() => setShowCapabilityStatement(false)}>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             className="relative w-full max-w-6xl h-full max-h-[90vh] bg-slate-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center p-4 border-b border-white/10 bg-slate-950">
+            <div className="flex justify-between items-center p-4 border-b border-white/10 bg-slate-950 shrink-0">
               <div className="flex items-center gap-2 text-white">
                 <FileText size={20} className="text-blue-400" />
                 <h3 className="text-lg font-bold">Capability Statement</h3>
               </div>
-              <button
-                onClick={() => setShowPdf(false)}
-                className="text-slate-400 hover:text-white transition p-2 hover:bg-white/10 rounded-full cursor-pointer"
-                aria-label="Close"
-              >
-                <X size={20} />
-              </button>
+              <div className="flex items-center gap-2">
+                <a
+                  href="/Capability_Statement.pdf"
+                  download
+                  className="flex items-center gap-2 text-sm font-semibold bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition"
+                >
+                  <Download size={16} /> Download PDF
+                </a>
+                <button
+                  onClick={() => setShowCapabilityStatement(false)}
+                  className="text-slate-400 hover:text-white transition p-2 hover:bg-white/10 rounded-full cursor-pointer ml-2"
+                  aria-label="Close"
+                >
+                  <X size={20} />
+                </button>
+              </div>
             </div>
-            <div className="flex-1 w-full bg-slate-800 relative">
-              <iframe
-                src="/Capability_Statement.pdf"
-                className="absolute inset-0 w-full h-full border-none"
-                title="Capability Statement"
-              />
+            <div className="flex-1 w-full bg-slate-800 relative overflow-y-auto p-6 md:p-12">
+              <div className="prose prose-invert prose-blue max-w-4xl mx-auto">
+                <ReactMarkdown>{capabilityContent}</ReactMarkdown>
+              </div>
             </div>
           </motion.div>
         </div>

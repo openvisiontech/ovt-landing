@@ -57,7 +57,7 @@ const UliKayaSection = () => {
 
             <h2 className="text-4xl font-bold text-white mb-6">
               Meet Uli Kaya: <br />
-              <span className="text-blue-400">The MCP-Native Robot</span>
+              <span className="text-blue-400">The Agentic AI Ready Robot</span>
             </h2>
 
             <p className="text-lg text-slate-400 mb-8 leading-relaxed">

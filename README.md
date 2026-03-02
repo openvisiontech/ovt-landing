@@ -1,58 +1,45 @@
 ulisdk: The Robotic Nervous System for Agentic AI
-ulisdk is a high-performance middleware designed to bridge the gap between traditional robotic infrastructures and modern Agentic AI ecosystems. By leveraging the Model Context Protocol (MCP), ulisdk enables physical assets to export their telemetry and functional capabilities as discoverable "tools" for Large Language Models (LLMs).
+ulisdk is a high-performance middleware designed to bridge the gap between physical robotic infrastructures and Agentic AI ecosystems. Moving beyond generic protocols, ulisdk implements a Skills-Based architecture, allowing assets to export their identity, telemetry, and functional capabilities as semantically-rich markdown context strings.
 
 🚀 Key Features
-MCP-Native Integration: Automatically wrap robotic functions into MCP services, allowing AI Agents (Claude, GPT, etc.) to call hardware functions directly.
+Agent Skills Framework: Robotic functions are exported as "Skills" with detailed markdown descriptions, enabling LLMs to reason over tool-calling parameters and mission logic.
 
-Dynamic Asset Discovery: Assets self-describe their capabilities (e.g., "Navigate to GPS," "Capture Thermal Frame") upon connection.
+Unified Link Interface (ULI): A hardened interface for secure asset discovery, data exportation, and remote execution.
 
-Agentic Interoperability: Moves beyond static APIs—LLMs can reason through available asset "Agents" to complete complex missions.
+A2UI Framework: Native Dart-FFI integration for the Flutter ecosystem, allowing AI Agents to drive real-time user interfaces with zero-copy overhead.
 
-Hardware Agnostic: Proven on the Uli Kaya 3-wheel platform; extensible to any sensor or actuator fleet.
+Granular Governance: Baked-in support for App Access Privileges (Operator/Maintainer) and Data Access Tiers (Classified/Controlled/Unclassified).
 
-Unified Interface (ULI): A single, hardened interface for data exportation and remote execution.
+Hardware Agnostic: Proven on the Uli Kaya 3-wheel platform and extensible to any sensor or actuator fleet.
 
-🛠 Quick Start
-Installation
-Bash
+🔍 Autonomous Discovery & Context
+The Uli SDK enables assets to self-describe via the Discovery Service. When an AI Agent queries the SDK, it receives three layers of markdown context:
 
-# Clone the repository
-git clone https://github.com/openvisiontech/ulisdk.git
-cd ulisdk
+Asset Context: Identity (URI), Subsystem ID, physical Pose, and Access Privileges.
 
-# Install core dependencies (C++/Python)
-./scripts/install_dependencies.sh
-Exposing an Asset to an AI Agent
-Python
+Agent Skills Context: Functional capabilities, configuration requirements, and periodic control parameters.
 
-import ulisdk
+Data Topic Context: Telemetry structure, data semantics, and associated Flutter UI Widgets for A2UI.
 
-# Initialize the bridge for the Uli Kaya platform
-bridge = ulisdk.MCPBridge(asset_id="ULI-KAYA-V1")
+🔒 Access Procedure
+The ulisdk source code is proprietary and not available for public download. To ensure security and compliance with defense standards, access is granted to approved organizations following a vetting process.
 
-# Export capabilities as discoverable tools
-bridge.export_tool(name="move_to", func=my_navigation_logic)
-bridge.export_stream(name="video_feed", source="/dev/video0")
+To Request Access:
+Visit openvisiontech.com/#contact.
 
-bridge.start()
-print("ulisdk: Asset is now discoverable by AI Agents.")
-🤖 Case Study: Uli Kaya
-The Uli Kaya 3-wheel test robot serves as the reference implementation for ulisdk.
+Complete the Request SDK Access form, including your GitHub handle and organization credentials.
 
-Task: An AI agent receives a prompt: "Inspect the perimeter and report any anomalies."
-
-Execution: The agent queries ulisdk, discovers the Maps and anomaly_detection tools on Uli Kaya, and autonomously constructs the execution plan via the MCP bridge.
+Our team will review your application for access to the private repository.
 
 🏛 Federal & Defense
 Open Vision Technology is a registered federal contractor.
 
-CAGE Code: 18NH2
+CAGE Code: [YOUR_CODE]
 
-UEI: U6GJVDKFSYG1
+UEI: [YOUR_UEI]
 
-Compliance: Designed with MOSA (Modular Open Systems Approach) principles for JADC2 and autonomous defense applications.
+Compliance: MOSA (Modular Open Systems Approach) principles for JADC2 and autonomous operations.
 
-📄 License
-This software is currently under a Proprietary License for Open Vision Technology. For commercial licensing or federal partnership inquiries, please contact:
-Email: genshianglin@gmail.com
-Web: ulisdk.com
+📄 License & Contact
+This software is licensed under a Proprietary Commercial License.
+Inquiries: genshianglin@gmail.com | gen@openvisiontech.com
