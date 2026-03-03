@@ -16,8 +16,6 @@ const Navbar = () => (
       <a href="#hero" className="hover:text-secondary transition">^</a>
       <a href="#solutions" className="hover:text-secondary transition">Solutions</a>
       <a href="#uli-kaya" className="hover:text-secondary transition">Uli Kaya</a>
-      <a href="#federal" className="hover:text-secondary transition">Federal</a>
-      <a href="#contact" className="hover:text-secondary transition">Contact</a>
     </div>
     <a
       href="https://www.ulisdk.com"
