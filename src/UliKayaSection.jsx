@@ -96,7 +96,7 @@ const UliKayaSection = () => {
 
             {/* External Link Button */}
             <a
-              href="https://www.ulisdk.com/ulikaya/ulikaya1.html"
+              href="https://www.ulikaya.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:opacity-90 text-white rounded-xl font-bold transition-all hover:scale-105 shadow-[0_4px_15px_rgba(242,148,98,0.4)]"
