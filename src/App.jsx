@@ -153,6 +153,12 @@ const Features = () => (
   </section>
 );
 
+const Footer = () => (
+  <footer className="py-12 bg-primary border-t border-white/5 text-center text-gray-400 text-sm">
+    <p>© {new Date().getFullYear()} Open Vision Technology, LLC. All rights reserved.</p>
+  </footer>
+);
+
 const App = () => (
   <div className="min-h-screen bg-bg-light font-sans selection:bg-secondary/30 text-primary">
     <Navbar />
@@ -161,6 +167,7 @@ const App = () => (
     <UliKayaSection />
     <FederalSection />
     <ContactSection />
+    <Footer />
   </div>
 );
 
