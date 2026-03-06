@@ -5,23 +5,37 @@ const ContactSection = () => {
   const [formState, setFormState] = useState('idle');
   const [requestSdk, setRequestSdk] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormState('loading');
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    const subject = encodeURIComponent("OVT Contact Form Submission from " + data.fullName);
-    let bodyText = `Name: ${data.fullName}\nEmail: ${data.email}\nEntity Type: ${data.entityType}\n`;
-    if (requestSdk && data.github) {
-      bodyText += `GitHub: ${data.github}\n`;
+    // Include the SDK request state in our JSON payload
+    data.requestSdk = requestSdk;
+
+    try {
+      // TODO: Replace with your actual Google Apps Script Web App URL
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbxwFSQWjR1IkNVtQNfFTWgf_kAc_Tgq4VLy-1eJbaVeNBRjUdZBb_y5fNf-7TH5Y-YUMg/exec';
+
+      await fetch(scriptUrl, {
+        method: 'POST',
+        // 'no-cors' prevents CORS issues when calling Google Apps Script from a frontend
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(data),
+      });
+
+      // Using setTimeout just to show the loading animation for a slight UX improvement
+      setTimeout(() => setFormState('success'), 800);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setFormState('idle');
+      alert('Failed to submit form. Please try again.');
     }
-    bodyText += `\nMessage:\n${data.message}`;
-
-    window.location.href = `mailto:genshianglin@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
-
-    setTimeout(() => setFormState('success'), 1500);
   };
 
   return (
