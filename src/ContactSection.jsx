@@ -49,7 +49,6 @@ const ContactSection = () => {
             <p className="text-gray-600 max-w-md leading-relaxed">
               From federal JADC2 initiatives to commercial edge-AI, we provide the
               middleware that turns hardware into intelligence.
-              (email: genshianglin@gmail.com)
             </p>
           </div>
         </div>
