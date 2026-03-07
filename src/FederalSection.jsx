@@ -12,7 +12,7 @@ const FederalSection = () => {
     if (showCapabilityStatement) {
       document.body.style.overflow = 'hidden';
       if (!capabilityContent) {
-        fetch('/Capability_Statement.md')
+        fetch('/Capability-Statement.md')
           .then(res => res.text())
           .then(text => setCapabilityContent(text))
           .catch(err => console.error("Failed to load capability statement", err));
@@ -112,7 +112,7 @@ const FederalSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <a
-                  href="/Capability_Statement.pdf"
+                  href="/Capability-Statement.pdf"
                   download
                   className="flex items-center gap-2 text-sm font-semibold bg-secondary hover:opacity-90 text-white px-4 py-2 rounded-lg transition"
                 >
