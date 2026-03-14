@@ -6,19 +6,22 @@
 
 #### **Company Overview**
 
-Open Vision Technology (OVT) provides the "connective tissue" between physical infrastructure and Agentic AI. Our flagship **uliSDK** enables connected assets—from robotic fleets to industrial sensors—to dynamically export telemetry and functional capabilities as discoverable **AI Context**. We specialize in high-fidelity Agent-to-UI (A2UI) frameworks that allow autonomous agents to reason across diverse hardware through a unified, standardized interface.
+Open Vision Technology (OVT) provides the "connective tissue" between physical infrastructure and Agentic AI. Our flagship **Uli SDK** enables connected assets—from robotic fleets to industrial sensors—to dynamically export their identity, functional capabilities, and telemetry into a structured Knowledge Graph-driven Context Layer. We specialize in high-fidelity Agent-to-UI (A2UI) frameworks that allow autonomous agents to retrieve deep system knowledge and reason across diverse hardware through a unified, standardized semantic interface.
+
+reason across diverse hardware through a unified, standardized interface.
 
 #### **Core Competencies**
 
-* **Agentic AI Interoperability:** Abstracting machine functions into discoverable AI "tools" and "resources" for LLM-driven reasoning.  
-* **A2UI (Agent-to-UI) Framework:** Native Dart-FFI integration enabling AI agents to drive real-time Flutter dashboards directly from telemetry.  
-* **Dynamic Asset Discovery:** Real-time exportation of asset tasks and data streams, eliminating the need for hard-coded integrations.  
-* **Full-Stack Robotics:** Expert implementation of sensor fusion and autonomous navigation (ROS2/NVIDIA Jetson) for omnidirectional platforms.  
-* **Modular Middleware:** First-in-class "Agent Skills" implementation for robotics, ensuring seamless integration with modern AI ecosystems.
+* **Knowledge Graph Synthesis:** Automating the ingestion of Asset, Capability, and Telemetry context into a dynamic knowledge layer for LLM-driven reasoning and discovery.  
+* **Semantic State Estimation:** Enabling AI agents to maintain accurate, real-time world models by reasoning over the semantics of subscribed telemetry data topics within the knowledge graph.  
+* **Autonomous Command Execution**: Utilizing the capability context layer to generate precise configurations and control parameters, allowing agents to act upon reasoning with high-fidelity situation awareness.  
+* **A2UI (Agent-to-UI) Framework:** Native Dart-FFI integration that allows AI agents to dynamically drive real-time Flutter dashboards and control interfaces based on discovered asset context.  
+* **Full-Stack Robotics:** Expert deployment of sensor fusion and autonomous navigation (ROS2/NVIDIA ISAAC ROS) for Jetson-powered omnidirectional platforms, validated via the Uli Kaya development blueprint.
 
 #### **Differentiators**
 
-* **Discovery-First Architecture:** Unlike static APIs, uliSDK allows agents to query a system and "learn" capabilities on the fly, enabling rapid adaptation to new hardware.  
+* **Automated Contextual Discovery:** the Uli SDK implements a dynamic discovery service that allows AI agents to autonomously query and ingest t**he Context of Robotic Assets**, **Functional Capabilities**, and **Telemetry**.  
+* **Knowledge Graph-Driven Context Layer**: By synthesizing Asset, Capability, and Telemetry context, a structured semantic context layer is constructed. The context layer allows **Deep Semantic Reasoning**, **Live State Estimation**, and **Precise Command Execution**.  
 * **JADC2 Alignment:** Designed for "Joint All-Domain Command and Control" environments where heterogeneous assets must share a common data fabric.  
 * **Hardware Agnostic:** Proven deployment across diverse platforms, from our in-house 3-wheel **Uli Kaya** robot to fixed industrial telemetry sensors.  
 * **Zero-Friction Integration:** Standardized AI Agent Skills reduce integration latency by 40%+ by bypassing custom middleware for each new asset.
