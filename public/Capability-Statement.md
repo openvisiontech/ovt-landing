@@ -6,9 +6,7 @@
 
 #### **Company Overview**
 
-Open Vision Technology (OVT) provides the "connective tissue" between physical infrastructure and Agentic AI. Our flagship **Uli SDK** enables connected assets—from robotic fleets to industrial sensors—to dynamically export their identity, functional capabilities, and telemetry into a structured Knowledge Graph-driven Context Layer. We specialize in high-fidelity Agent-to-UI (A2UI) frameworks that allow autonomous agents to retrieve deep system knowledge and reason across diverse hardware through a unified, standardized semantic interface.
-
-reason across diverse hardware through a unified, standardized interface.
+Open Vision Technology provides full-stack software solutions for robotic systems. Our flagship product, **Uli SDK**, serves as the "connective tissue" between physical infrastructure and Agentic AI, enabling connected assets—from robotic fleets to industrial sensors—to dynamically export their identity, functional capabilities, and telemetry into a structured Knowledge Graph-driven Context Layer.
 
 #### **Core Competencies**
 
@@ -16,7 +14,8 @@ reason across diverse hardware through a unified, standardized interface.
 * **Semantic State Estimation:** Enabling AI agents to maintain accurate, real-time world models by reasoning over the semantics of subscribed telemetry data topics within the knowledge graph.  
 * **Autonomous Command Execution**: Utilizing the capability context layer to generate precise configurations and control parameters, allowing agents to act upon reasoning with high-fidelity situation awareness.  
 * **A2UI (Agent-to-UI) Framework:** Native Dart-FFI integration that allows AI agents to dynamically drive real-time Flutter dashboards and control interfaces based on discovered asset context.  
-* **Full-Stack Robotics:** Expert deployment of sensor fusion and autonomous navigation (ROS2/NVIDIA ISAAC ROS) for Jetson-powered omnidirectional platforms, validated via the Uli Kaya development blueprint.
+* **Full-Stack Robotics:** Expert deployment of sensor fusion and autonomous navigation (ROS2/NVIDIA ISAAC ROS) for Jetson-powered omnidirectional platforms, validated via the Uli Kaya development blueprint.  
+* **Legacy-to-AI Bridging**: Wrapping traditional industrial and defense infrastructures into AI agent consumable ecosystems.
 
 #### **Differentiators**
 
