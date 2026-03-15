@@ -8,7 +8,7 @@
 
 ### **Executive Overview**
 
-The **Uli (Unified Link Interface) SDK** is the robotic nervous system for Agentic AI. It is a high-performance middleware designed to bridge the gap between traditional infrastructures and modern Agentic AI ecosystems. By leveraging a skills-based architecture, Uli SDK enables physical assets to expose their functional capabilities and telemetry as discoverable “context” and “tools” for Language Models.
+The **Uli (Unified Link Interface) SDK** is the robotic nervous system for Agentic AI, serving as a high-performance middleware that bridges the gap between traditional infrastructures of robotic assets and modern agentic AI ecosystems.
 
 ---
 
@@ -34,31 +34,21 @@ Leveraging a **DoD MOSA-compliant design** (Modular Open Systems Approach), the 
 
 #### **Contextual Discovery & Interoperability Infrastructure**
 
-The Uli SDK is designed to enable the dynamic **Discovery of Robotic Asset Context,** including physical identity and security governance, the **Context of Functional Capabilities**, and high-fidelity **Telemetry Context**.
+The Uli SDK is designed to enable the dynamic **Discovery of Robotic Asset Context**, the **Context of Functional Capabilities**, and **Telemetry Context**.
 
-By utilizing the Unified Link Interface, the Uli SDK transforms complex robotic hardware into a self-describing ecosystem, providing AI agents with the foundational context required for situational reasoning and autonomous command execution.
-
-**Implementation Detail:**
-
-1. **Capability Export**: Assets export their identity, functional capabilities (Uli SDK agents), and telemetry (data topics) through the Unified Link Interface.  
-2. **Discovery Services**: Clients identify asset functional capabilities and telemetry at runtime through dedicated discovery services.  
-3. **Asset Context**: Every asset provides a standardized context string including:  
-   * **Description and URI**: (e.g., com.openvisiontech.uli-kaya.\<serial\_number\>).  
-   * **Subsystem ID**: Facilitates direct SDK access to the asset hardware.  
-   * **Physical Pose**: Real-time spatial coordinates and orientation.  
-   * **Control Availability**: Enum status (Under Control, Available, Not Available).  
-   * **Governance**: Defined App Access Privileges (Operator, Maintainer, Depot) and Data Access Tiers (Classified, Controlled, Unclassified).  
-4. **Markdown Context Strings**: Discovered functional capabilities and telemetry provide context in markdown format. These strings describe data structures, semantics of enclosed fields, and specific usage cases.  
-5. **Autonomous Reasoning**: AI agents query the SDK for discovered assets. Using provided context strings, the AI decides whether to subscribe to telemetry or execute specific functions to act upon its reasoning.
-
-#### **A2UI (Agent-to-UI) Framework**
-
-The SDK features native **Dart-FFI integration**, creating a powerful A2UI framework. This enables AI agents to drive real-time, high-fidelity user interfaces directly from data topic streams.
+By utilizing the discovery services, the Uli SDK transforms complex robotic hardware into a self-describing ecosystem, providing AI agents with the foundational context required for situational reasoning and autonomous command execution.
 
 **Implementation Detail:**
 
-* **UI Integration**: Via Dart-FFI, the SDK serves as the backend for Flutter-UI, capable of displaying media contents and 3D drawings.  
-* **Contextual UI**: Context strings provide the information needed for the AI to select appropriate Flutter UI Widgets for displaying data or providing user input fields for configuration and periodic control parameters.
+* **Discovery Services**: Clients identify the assets and their functional capabilities and telemetry at runtime through dedicated discovery services.  
+* **Asset Exportation:**  Every asset provides a standardized context string including:  
+  * **Description and URI**: (e.g., com.openvisiontech.uli-kaya.\<serial\_number\>).  
+  * **Subsystem ID**: Facilitates direct SDK access to the asset hardware.  
+  * **Physical Pose**: Real-time spatial coordinates and orientation.  
+  * **Control Availability**: Enum status (Under Control, Available, Not Available).  
+  * **Governance**: Defined App Access Privileges (Operator, Maintainer, Depot) and Data Access Tiers (Classified, Controlled, Unclassified).  
+* **Capability Exportation**: Functional capabilities are exported with markdown descriptions that define what the asset can do and the configurations and parameters required to execute those tasks.  
+* **Telemetry Exportation**: Real-time data topics are exported with semantic definitions, informing the system not just of the “values”, but of the “meaning” of the data.
 
 **Semantic Knowledge Retrieval**
 
@@ -69,6 +59,15 @@ Implementation Detail:
 * **Reasoning**: AI agents query this graph to identify assets with the correct **Data Access Privileges** and **Control Availability**.  
 * **Execution**: From the graph, agents retrieve the exact **Capability Context** required to generate configurations and control parameters for the hardware, ensuring mission execution is grounded in high-fidelity system knowledge.  
 * **State Estimation**: AI agents utilize the **Telemetry Context** and subscribed data topics to perform high-level state estimation. By reasoning over the semantics of the live data stream, the agent maintains an accurate world model of the asset’s physical status, environmental interactions, and operational health within the Knowledge Graph.
+
+#### **A2UI (Agent-to-UI) Framework**
+
+The SDK features native **Dart-FFI integration**, creating a powerful A2UI framework. This enables AI agents to drive real-time, high-fidelity user interfaces directly from data topic streams.
+
+**Implementation Detail:**
+
+* **UI Integration**: Via Dart-FFI, the SDK serves as the backend for Flutter-UI, capable of displaying media contents and 3D drawings.  
+* **Contextual UI**: Context strings provide the information needed for the AI to select appropriate Flutter UI Widgets for displaying data or providing user input fields for configuration and periodic control parameters.
 
 ---
 
