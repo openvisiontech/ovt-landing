@@ -5,8 +5,8 @@ import { Activity, ShieldCheck, Cpu, Terminal, ChevronRight, Trophy } from 'luci
 const UliKayaSection = () => {
   const specs = [
     { label: "Architecture", value: "3-Wheel Omnidirectional" },
-    { label: "Compute", value: "NVIDIA Jetson (Orin/Nano)" },
-    { label: "Middleware", value: "ulisdk (Agent skills-based)" },
+    { label: "Compute", value: "Two NVIDIA Jetson (Orin/Nano)" },
+    { label: "Middleware", value: "Uli SDK, ROS2, ISAAC ROS" },
     { label: "LLM Onboard", value: "Gemma 3" },
   ];
 
