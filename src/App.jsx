@@ -60,7 +60,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-semibold mb-6"
         >
-          <Zap size={14} /> KNOWLEDGE GRAPH
+          <Network size={14} /> INTEROPERABILITY
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
@@ -138,11 +138,11 @@ const Features = () => (
   <section id="solutions" className="py-24 bg-bg-light">
     <div className="max-w-7xl mx-auto px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
+        { title: "Interoperability", desc: "The infrastructure of the Uli SDK enables the connection of disparate assets. Via the Unified Link Interface Uli SDK implements, the assets and their capabilities and telemetry can be discovered.", icon: <Network className="text-secondary" /> },
+        { title: "Dynamic Infrastructure", desc: "Assets and their functional modules can be added or removed as the mission changes, eliminating the needs for static reconfigurations. Assets and the functional modules will be discovered via Uli SDK services.", icon: <Search className="text-secondary" /> },
         { title: "Contextual Knowledge Graph", desc: "Synthesize Asset, Capability, and Telemetry context into a dynamic knowledge layer. AI agents retrieve deep system insights from the graph to power semantic reasoning and precise command execution.", icon: <Waypoints className="text-secondary" /> },
         { title: "Live State Estimation", desc: "Agents leverage the Telemetry Context to perform high-level state estimation. By reasoning over data semantics within the Knowledge Graph, agents maintain a real-time world model for safer, more accurate execution.", icon: <Activity className="text-secondary" /> },
         { title: "A2UI Framework", desc: "Native Dart-FFI integration for the Flutter ecosystem. AI Agents dynamically drive real-time interfaces, providing human operators with low-latency situational awareness and command-and-control.", icon: <Cpu className="text-secondary" /> },
-        { title: "Dynamic Infrastructure", desc: "Assets and their functional modules can be added or removed as the mission changes, eliminating the needs for static reconfigurations. Assets and the functional modules will be discovered via Uli SDK services.", icon: <Search className="text-secondary" /> },
-        { title: "Interoperability", desc: "The infrastructure of the Uli SDK enables the connection of disparate assets. Via the Unified Link Interface Uli SDK implements, the assets and their capabilities and telemetry can be discovered.", icon: <Network className="text-secondary" /> }
       ].map((f, i) => (
         <div key={i} className="p-8 rounded-2xl bg-white shadow-xl hover:shadow-2xl border border-gray-100 hover:border-secondary/30 transition duration-300">
           <div className="mb-4 text-3xl">{f.icon}</div>
