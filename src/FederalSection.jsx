@@ -66,7 +66,7 @@ const FederalSection = () => {
               <div className="bg-white rounded-xl p-6 border border-gray-200">
                 <h3 className="text-primary font-mono text-sm mb-6 border-b border-gray-200 pb-2">PROCUREMENT_DATA</h3>
 
-                <div className="space-y-6">
+                <div className="space-y-2">
                   <div>
                     <label className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">CAGE Code</label>
                     <p className="text-xl font-mono text-secondary font-bold tracking-wider">
@@ -78,6 +78,10 @@ const FederalSection = () => {
                     <p className="text-sm font-mono text-primary uppercase">
                       U6GJVDKFSYG1
                     </p>
+                  </div>
+                  <div className="pt-4 border-t border-gray-100">
+                    <label className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">SBA Certifications</label>
+                    <p className="text-sm text-gray-600">EDWOSB, WOSB</p>
                   </div>
                   <div className="pt-4 border-t border-gray-100">
                     <label className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Primary NAICS</label>

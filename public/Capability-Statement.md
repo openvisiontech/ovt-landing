@@ -1,6 +1,6 @@
-### **Capability Statement: Open Vision Technology, LLC**
+### **Capability Statement: Open Vision Technology, LLC.**
 
-**CAGE:** 18NH2 | **UEI:** U6GJVDKFSYG1 **Point of Contact:** Denise Lin | **Email:** denise@openvisiontech.com **Website:** openvisiontech.com | **Address:** 8 Thompson Pond Road, Stoneham, MA 02180
+**CAGE:** 18NH2 | **UEI:** U6GJVDKFSYG1 | **SBA Certifications:** EDWOSB, WOSB **| Point of Contact:** Denise Lin | **Email:** denise@openvisiontech.com **Website:** openvisiontech.com | **Address:** 8 Thompson Pond Road, Stoneham, MA 02180
 
 ---
 
@@ -32,7 +32,7 @@ Open Vision Technology provides full-stack software solutions for robotic system
 
 #### **Corporate Data**
 
-**Socio-Economic Status:** Small Business (SB)
+**Socio-Economic Status:** EDWOSB and WOSB Certified
 
 **NAICS Codes:**
 
