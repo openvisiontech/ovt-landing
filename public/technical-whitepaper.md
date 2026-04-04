@@ -30,9 +30,9 @@ Leveraging a **DoD MOSA-compliant design** (Modular Open Systems Approach), the 
 
 ---
 
-### **2\. Advanced AI Integration & Context Discovery**
+### **2\. AI Integration**
 
-#### **Contextual Discovery & Interoperability Infrastructure**
+#### 
 
 The Uli SDK implements a **Discovery-Driven Semantic Engine**. This infrastructure provides standardized services that allow robotic assets to export themselves, their functional capabilities, and their telemetry as context for synthesis into a **Knowledge Graph**.
 
