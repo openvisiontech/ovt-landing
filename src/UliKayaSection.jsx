@@ -7,7 +7,7 @@ const UliKayaSection = () => {
     { label: "Architecture", value: "3-Wheel Omnidirectional" },
     { label: "Compute", value: "Two NVIDIA Jetson (Orin/Nano)" },
     { label: "Middleware", value: "Uli SDK, ROS2, ISAAC ROS" },
-    { label: "LLM Onboard", value: "Gemma 3" },
+    { label: "LLM Onboard", value: "Gemma 4" },
   ];
 
   return (
