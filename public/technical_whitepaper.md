@@ -41,9 +41,8 @@ The Uli SDK implements a **Discovery-Driven Semantic Engine**. This infrastructu
 * **Standardized Discovery Services:** Assets "self-announce" via the Unified Link Interface (ULI), broadcasting identity (Asset URI, Pose, Privileges), functional skills (Agent Context), and data structures (Telemetry Context).  
 * **Knowledge Graph Synthesis:** The discovery engine automatically instantiates discovered data as nodes and edges within a dynamic Knowledge Graph. This creates a searchable **Context Layer** that AI agents use for semantic retrieval.  
 * **State Estimation:** Beyond raw data access, AI agents leverage the **Telemetry Context** to perform high-level state estimation. By reasoning over the semantics of subscribed data topics within the graph, agents maintain a real-time world model of the asset's physical and operational status.  
-* **Python & AI Integration:** Through native **Python Bindings**, the SDK enables immediate interoperability with the broader AI ecosystem, including ROS-based stacks and ML research modules, allowing for rapid transition from simulation to hardware.  
-* **UI Integration**: Via Dart-FFI, the SDK serves as the backend for Flutter-UI, capable of displaying media contents and 3D drawings.  
-* **Contextual UI**: Telemetry Context provides the information needed for the AI to select appropriate Flutter UI Widgets for displaying data or providing user input fields for configuration and periodic control parameters.
+* **Python & AI Integration:** Through native **Python Bindings**, the SDK enables immediate interoperability with the broader AI ecosystem, including ROS-based stacks and ML research modules, allowing for rapid transition from simulation to hardware.    
+* **Agent-to-UI (A2UI)**: Telemetry Context provides the information needed for the AI to select appropriate Flutter UI Widgets for displaying data or providing user input fields for configuration and periodic control parameters.
 
 ---
 
