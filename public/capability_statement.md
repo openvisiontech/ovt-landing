@@ -32,14 +32,14 @@ Open Vision Technology provides full-stack software solutions for robotic system
 * Developed and deployed a high-performance discovery-driven middleware that bridges the gap between traditional robotic infrastructures and Agentic AI ecosystems.  
 * Enabled connected assets to dynamically export identity, functional capabilities, and telemetry into a structured **Knowledge Graph-driven Context Layer**.
     
-**Subcontractor for Defense Primes**:
+**Subcontractor for Defense Primes (including QinetiQ)**:
 
-* Served as a specialized subcontractor for defense primes, contributing to the development of sophisticated command and control (C2) applications for multiple Department of Defense (DoD) **Programs of Record (PoR)**.  
-* Implemented and integrated industry-standard communication protocols and architectural frameworks, including:  
+* Served as a specialized subcontractor for tier-1 defense primes, including **QinetiQ**, contributing to the software architecture and integration of next-gen command and control (C2) systems for multiple Department of Defense (DoD) **Programs of Record (PoR)**.  
+* Implemented and integrated industry-standard military communication protocols and architectural frameworks, including:  
     * **SAE AS4 (JAUS)**: Unmanned systems interoperability and message profiling.  
     * **J1939**: Vehicle bus instrumentation and diagnostics for heavy-duty ground assets.  
     * **DDS (Data Distribution Service)**: High-performance, real-time data bus architectures for distributed systems.  
-    * **ROS**: Modular software integration for robotic sensing and perception.
+    * **ROSM / ROS**: Modular software integration and messaging standards for robotic perception and state estimation.
 
 **Project Uli Kaya**:
 

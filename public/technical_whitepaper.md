@@ -26,7 +26,7 @@ The framework connects disparate systems across multiple domains:
 * **Operational Systems**: Robot arms, process tools, and controllers.  
 * **Intelligence Layers**: AI agents and data viewers/loggers.
 
-Leveraging a **DoD MOSA-compliant design** (Modular Open Systems Approach), the Uli SDK ensures seamless collaboration and rapid reconfiguration.
+Leveraging a **DoW MOSA-compliant design** (Modular Open Systems Approach), the Uli SDK ensures seamless collaboration and rapid reconfiguration.
 
 ---
 
