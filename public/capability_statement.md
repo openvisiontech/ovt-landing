@@ -6,58 +6,53 @@
 
 #### **Company Overview**
 
-Open Vision Technology provides full-stack software solutions for robotic systems. Our flagship product, **Uli SDK**, serves as the "connective tissue" between physical infrastructure and Agentic AI, enabling connected assets—from robotic fleets to industrial sensors—to dynamically export their identity, functional capabilities, and telemetry into a structured Knowledge Graph-driven Context Layer.
+Open Vision Technology, LLC provides high-performance full-stack software solutions and tactical AI middleware for autonomous robotics and Edge AI applications. Our flagship software product, **Uli SDK**, serves as the connective software layer bridging physical telemetry, edge platforms, and Agentic AI reasoning engines. By dynamically transforming physical assets—including mobile robotic fleets, tactical sensors, and legacy payloads—into a structured **Knowledge Graph Context Layer**, Uli SDK accelerates autonomous command, semantic state estimation, and interoperability across multi-domain ecosystems. 
 
 #### **Core Competencies**
 
-* **Knowledge Graph Synthesis:** Automating the ingestion of Asset, Capability, and Telemetry context into a dynamic knowledge layer for LLM-driven reasoning and discovery.  
-* **Semantic State Estimation:** Enabling AI agents to maintain accurate, real-time world models by reasoning over the semantics of subscribed telemetry data topics within the knowledge graph.  
-* **Autonomous Command Execution**: Utilizing the capability context layer to generate precise configurations and control parameters, allowing agents to act upon reasoning with high-fidelity situation awareness.  
-* **A2UI (Agent-to-UI) Framework:** Native Dart-FFI integration that allows AI agents to dynamically drive real-time Flutter dashboards and control interfaces based on discovered asset context.  
-* **Full-Stack Robotics:** Expert deployment of sensor fusion and autonomous navigation (ROS2/NVIDIA ISAAC ROS) for Jetson-powered omnidirectional platforms, validated via the Uli Kaya development blueprint.  
-* **Legacy-to-AI Bridging**: Wrapping traditional industrial and defense infrastructures into AI agent consumable ecosystems.
+* **Multi-Domain Heterogeneous Asset Integration:** Seamlessly bridging disparate robotic platforms, autonomous systems, legacy hardware, and tactical edge sensors across multi-domain environments into a unified software architecture.  
+* **Dynamic Context & Knowledge Graph Synthesis:** Automated discovery and semantic modeling of asset identity, functional capabilities, and live telemetry feeds into a structured Knowledge Graph, constructing dynamic world models for AI agent reasoning and command execution.  
+* **Human-Machine Teaming via Cursor-on-Target (CoT):** Real-time, bi-directional situational awareness sharing through native CoT protocol support, establishing a unified Common Operational Picture (COP) for both human operators (e.g., TAK ecosystem) and AI agents.  
+* **Autonomous Command & Execution Pipelines:** Translating higher-level AI agent reasoning into high-fidelity control parameters, task allocations, and mission execution protocols with zero human-in-the-loop latency bottlenecks.  
+* **Agent-to-UI (A2UI) Dynamic Visualization:** Utilizing Dart-FFI and Flutter integration to dynamically generate operator dashboards and operational controls based on real-time Knowledge Graph asset discovery.  
+* **Edge-Optimized Middleware Architecture:** High-throughput, low-latency bare-metal C++ framework designed to execute directly on edge compute nodes (e.g., NVIDIA Jetson) without relying on persistent cloud connectivity.
 
 #### **Differentiators**
 
-* **Automated Contextual Discovery:** the Uli SDK implements a dynamic discovery service that allows AI agents to autonomously query and ingest t**he Context of Robotic Assets**, **Functional Capabilities**, and **Telemetry**.  
-* **Knowledge Graph-Driven Context Layer**: By synthesizing Asset, Capability, and Telemetry context, a structured semantic context layer is constructed. The context layer allows **Deep Semantic Reasoning**, **Live State Estimation**, and **Precise Command Execution**.  
-* **JADC2 Alignment:** Designed for "Joint All-Domain Command and Control" environments where heterogeneous assets must share a common data fabric.  
-* **Hardware Agnostic:** Proven deployment across diverse platforms, from our in-house 3-wheel **Uli Kaya** robot to fixed industrial telemetry sensors.  
-* **Zero-Friction Integration:** Standardized AI Agent Skills reduce integration latency by 40%+ by bypassing custom middleware for each new asset.
+* **NGC2 & JADC2 Interoperability:** Engineered to align with the U.S. Army’s Next Generation Command and Control (NGC2) vision and joint all-domain frameworks, providing a common tactical context fabric for heterogeneous manned and unmanned systems.  
+* **Automated Asset & Capability Discovery:** Uli SDK’s discovery layer eliminates manual middleware mapping, reducing integration latency by **40%+** when onboarding new sensors or robotic payloads.  
+* **Hardware & Sensor Agnostic:** Scalable architecture deployed on edge hardware ranging from our internal 3-wheel **Uli Kaya** mobile reference platform to fixed tactical telemetry sensors and vehicle buses.  
+* **Real-Time Edge-to-Agent Pipeline:** Built in optimized C++ and Dart-FFI to deliver low-latency telemetry ingestion and execution directly on tactical edge computers without relying on cloud availability.
 
 #### **Past Performance**
 
 **Uli SDK Implementation**:
 
 * Developed and deployed a high-performance discovery-driven middleware that bridges the gap between traditional robotic infrastructures and Agentic AI ecosystems.  
-* Enabled connected assets to dynamically export identity, functional capabilities, and telemetry into a structured **Knowledge Graph-driven Context Layer**.
-    
-**Subcontractor for Defense Primes (including QinetiQ)**:
+* Enabled connected assets to dynamically export identity, functional capabilities, and telemetry into a structured **Knowledge Graph-driven Context Layer**.  
+  **Subcontractor for Defense Primes**:  
+* Served as a specialized subcontractor for defense primes, contributing to the development of sophisticated command and control (C2) applications for multiple Department of Defense (DoD) **Programs of Record (PoR)**.  
+* Implemented and integrated industry-standard communication protocols and architectural frameworks, including:  
+  * **SAE AS4 (JAUS)**: Unmanned systems interoperability and message profiling.  
+  * **J1939**: Vehicle bus instrumentation and diagnostics for heavy-duty ground assets.  
+  * **DDS (Data Distribution Service)**: High-performance, real-time data bus architectures for distributed systems.  
+  * **ROS**: Modular software integration for robotic sensing and perception.
 
-* Served as a specialized subcontractor for tier-1 defense primes, including **QinetiQ**, contributing to the software architecture and integration of next-gen command and control (C2) systems for multiple Department of Defense (DoD) **Programs of Record (PoR)**.  
-* Implemented and integrated industry-standard military communication protocols and architectural frameworks, including:  
-    * **SAE AS4 (JAUS)**: Unmanned systems interoperability and message profiling.  
-    * **J1939**: Vehicle bus instrumentation and diagnostics for heavy-duty ground assets.  
-    * **DDS (Data Distribution Service)**: High-performance, real-time data bus architectures for distributed systems.  
-    * **ROSM / ROS**: Modular software integration and messaging standards for robotic perception and state estimation.
+**Project Uli Kaya (Autonomous Reference Platform):**
 
-**Project Uli Kaya**:
-
-* Successfully deployed the Uli SDK on a 3-wheel autonomous development platform.  
-* Demonstrated real-time telemetry exportation and agentic task execution via a unified interface, bridging bare-metal C++ and Agentic reasoning.
+* Designed, built, and deployed the Uli SDK onto Uli Kaya, a proprietary 3-wheeled omnidirectional autonomous robot platform running Jetson-based compute.  
+* Successfully demonstrated end-to-end edge AI command execution, real-time telemetry extraction, and dynamic A2UI dashboard rendering.
 
 #### **Corporate Data**
 
-**Socio-Economic Status:** EDWOSB and WOSB Certified
+* **Socio-Economic Status:** Economically Disadvantaged Woman-Owned Small Business (EDWOSB) & Woman-Owned Small Business (WOSB) Certified  
+* **CAGE Code:** 18NH2 | **UEI:** U6GJVDKFSYG1  
+* **NAICS Codes:**  
+  * **541511:** Custom Computer Programming Services *(Primary)*
 
-**NAICS Codes:**
-
-* **541511:** Custom Computer Programming Services (Primary)  
-* **541715:** Research and Development in the Physical, Engineering, and Life Sciences  
-* **334511:** Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System/Instrument Manufacturing
-
-**PSC Codes:**
-
-* **DA01:** IT and Telecom \- Business Application/Application Development Support  
-* **AC13:** R\&D \- Defense System: Electronics/Communication Equipment (Advanced Development)
+  * **541715:** Research and Development in the Physical, Engineering, and Life Sciences  
+  * **334511:** Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System/Instrument Manufacturing  
+* **PSC Codes:**  
+  * **DA01:** IT and Telecom \- Business Application/Application Development Support  
+  * **AC13:** R\&D \- Defense System: Electronics/Communication Equipment (Advanced Development)
 
