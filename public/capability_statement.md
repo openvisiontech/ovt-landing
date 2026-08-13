@@ -12,6 +12,7 @@ Open Vision Technology, LLC provides high-performance full-stack software soluti
 
 * **Multi-Domain Heterogeneous Asset Integration:** Seamlessly bridging disparate robotic platforms, autonomous systems, legacy hardware, and tactical edge sensors across multi-domain environments into a unified software architecture.  
 * **Dynamic Context & Knowledge Graph Synthesis:** Automated discovery and semantic modeling of asset identity, functional capabilities, and live telemetry feeds into a structured Knowledge Graph, constructing dynamic world models for AI agent reasoning and command execution.  
+* **Next-Gen CoT Protocol Extensions (Rich Media & Tensors):** High-performance extension of the Cursor-on-Target (CoT) specification that embeds heavy binary payloads—including low-latency image buffers, 3D point cloud meshes, and AI neural tensor arrays—directly alongside spatial XML metadata.   
 * **Human-Machine Teaming via Cursor-on-Target (CoT):** Real-time, bi-directional situational awareness sharing through native CoT protocol support, establishing a unified Common Operational Picture (COP) for both human operators (e.g., TAK ecosystem) and AI agents.  
 * **Autonomous Command & Execution Pipelines:** Translating higher-level AI agent reasoning into high-fidelity control parameters, task allocations, and mission execution protocols with zero human-in-the-loop latency bottlenecks.  
 * **Agent-to-UI (A2UI) Dynamic Visualization:** Utilizing Dart-FFI and Flutter integration to dynamically generate operator dashboards and operational controls based on real-time Knowledge Graph asset discovery.  
@@ -19,6 +20,7 @@ Open Vision Technology, LLC provides high-performance full-stack software soluti
 
 #### **Differentiators**
 
+* **Rich-Media Cursor-on-Target Protocol:** Unlike traditional CoT systems limited to positional telemetry, Uli SDK natively transports raw tensors, 3D spatial meshes, and tactical imagery via optimized UDP Multicast streams.  
 * **NGC2 & JADC2 Interoperability:** Engineered to align with the U.S. Army’s Next Generation Command and Control (NGC2) vision and joint all-domain frameworks, providing a common tactical context fabric for heterogeneous manned and unmanned systems.  
 * **Automated Asset & Capability Discovery:** Uli SDK’s discovery layer eliminates manual middleware mapping, reducing integration latency by **40%+** when onboarding new sensors or robotic payloads.  
 * **Hardware & Sensor Agnostic:** Scalable architecture deployed on edge hardware ranging from our internal 3-wheel **Uli Kaya** mobile reference platform to fixed tactical telemetry sensors and vehicle buses.  
