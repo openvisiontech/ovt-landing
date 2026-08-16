@@ -101,12 +101,6 @@ const C2Section = () => {
               By abstracting hardware skills into a open Knowledge Graph data layer, Uli SDK eliminates vendor lock-in and gives the warfighter software-defined adaptability.
             </p>
           </div>
-          <a 
-            href="#whitepaper" 
-            className="whitespace-nowrap inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors"
-          >
-            Explore NGC2 Architecture <ArrowRight className="w-4 h-4" />
-          </a>
         </div>
 
       </div>

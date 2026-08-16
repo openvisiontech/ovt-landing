@@ -53,7 +53,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/30 text-secondary text-xs font-semibold tracking-wide uppercase mb-6"
         >
-          <ShieldCheck size={16} className="text-cyan-400" /> R2I COMPLIANT & MOSA ALIGNED NEXT-GEN C2
+          <ShieldCheck size={16} className="text-cyan-400" /> Adaptability & Interoperability
         </motion.div>
 
         <motion.h1
@@ -62,8 +62,8 @@ const Hero = () => {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight max-w-5xl mx-auto"
         >
-          The Cognitive Nervous System for <br />
-          <span className="text-secondary">Next-Gen C2</span> and Autonomous Multi-Domain Operations
+          The Adaptive Infrastructure for <br />
+          <span className="text-secondary">Next-Gen C2, </span> Situation Sharing, and <span className="text-secondary">Multi-Domain Operations</span>
         </motion.h1>
 
         <motion.p
@@ -72,7 +72,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Powering the Army's Right to Integrate (R2I) initiative. Uli SDK transforms robotic hardware into a self-describing Knowledge Graph, giving Agentic AI the real-time context needed to reason, estimate state, and command across contested battlefields.
+          Open Vision Technology's Uli SDK deliver dynamic edge adaptability and seamless multi-domain interoperability.
         </motion.p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -83,13 +83,12 @@ const Hero = () => {
             <FileText size={18} /> Read Technical Whitepaper
           </button>
 
-          <a
-            href="/capability_statement.pdf"
-            download
+          <button
+            onClick={handleOpenCapability}
             className="px-8 py-4 bg-white/10 text-white rounded-xl font-bold border border-white/20 hover:bg-white/20 transition flex items-center gap-2 cursor-pointer"
           >
-            <Download size={18} /> Download Capability Statement (PDF)
-          </a>
+            <FileText size={18} /> Read Capability Statement
+          </button>
         </div>
       </div>
 

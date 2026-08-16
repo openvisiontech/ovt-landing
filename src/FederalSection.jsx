@@ -87,12 +87,6 @@ const FederalSection = () => {
                     <label className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Primary NAICS</label>
                     <p className="text-sm text-gray-600">541511, 541715, 334511</p>
                   </div>
-                  <button
-                    onClick={() => setShowCapabilityStatement(true)}
-                    className="w-full py-3 bg-gray-50 hover:bg-gray-100 border border-gray-200 text-primary text-xs font-bold rounded-lg transition uppercase tracking-tighter flex items-center justify-center gap-2 cursor-pointer shadow-sm"
-                  >
-                    <FileText size={16} /> View Capability Statement
-                  </button>
                 </div>
               </div>
             </div>
